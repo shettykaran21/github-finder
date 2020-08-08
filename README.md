@@ -1,6 +1,9 @@
 # Github User Finder
 
-##Usage
+## Usage
 
-###npm install
-###npm start
+### npm install
+Install dependies
+
+### npm start
+Run a local server in port 8080
