@@ -27,10 +27,29 @@ class UI {
           </ul>
         </div>
       </div>
-      <div>
-        <h3>Latest Repos </h3>
+      <div class="user-repos">
+        <h2 class="mb-s">Latest Repos</h2>
       </div>
     `;
+  }
+
+  showRepos(repos) {
+    let output = '<ul class="user-repos__list">';
+
+    repos.forEach((repo) => {
+      output += `
+        <li class="user-repos__item mb-s">
+          <a href="${repo.html_url}" target="_blank" class="user-repos__link">${repo.name}</a>
+          <div>
+            <span class="badge">Stars:  ${repo.stargazers_count}</span>
+            <span class="badge">Watchers:  ${repo.watchers_count}</span>
+            <span class="badge">Forks:  ${repo.forks_count}</span>
+          </div>
+        </li>
+      `;
+    });
+    output += '</ul>';
+    document.querySelector('.user-repos').innerHTML += output;
   }
 
   clearProfile() {

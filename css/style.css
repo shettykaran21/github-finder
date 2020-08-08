@@ -89,6 +89,8 @@ body {
   .footer__social {
     display: flex;
     gap: 1.5rem; }
+  .footer__link {
+    color: #1e1e1e; }
   .footer__icon {
     cursor: pointer; }
     .footer__icon--heart {
@@ -127,7 +129,21 @@ body {
       font-weight: 400;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly; }
+      justify-content: space-evenly;
+      letter-spacing: 0.5px; }
+  .user-repos__list {
+    list-style: none; }
+  .user-repos__item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #343a40;
+    padding: 1rem 2rem;
+    border-radius: 5px; }
+  .user-repos__link:link, .user-repos__link:visited {
+    color: #ffffff;
+    transition: all 0.1s ease; }
+  .user-repos__link:hover, .user-repos__link:active {
+    color: #727cf5; }
 
 .badge {
   display: inline-block;
