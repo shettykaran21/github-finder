@@ -32,4 +32,24 @@ class UI {
       </div>
     `;
   }
+
+  clearProfile() {
+    this.profile.innerHTML = '';
+  }
+
+  showAlert(message) {
+    this.clearProfile();
+
+    const p = document.createElement('p');
+    p.appendChild(document.createTextNode(message));
+    p.className = 'alert';
+
+    const form = document.querySelector('.search__form');
+
+    form.insertAdjacentElement('afterend', p);
+
+    setTimeout(() => {
+      p.remove();
+    }, 5000);
+  }
 }

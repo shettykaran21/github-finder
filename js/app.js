@@ -12,11 +12,14 @@ form.addEventListener('submit', (e) => {
     github.getUser(userText).then((data) => {
       if (data.profile.message === 'Not Found') {
         // Show alert
+        ui.showAlert(`User ${userText} not found`);
       } else {
         // Show profile
         ui.showProfile(data.profile);
       }
     });
+  } else {
+    ui.clearProfile();
   }
 
   e.preventDefault();

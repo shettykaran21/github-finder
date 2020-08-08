@@ -135,7 +135,8 @@ body {
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   font-size: 1.3rem;
-  text-align: center; }
+  text-align: center;
+  cursor: context-menu; }
   .badge--repos {
     background-color: #727cf5; }
   .badge--gists {
@@ -144,6 +145,16 @@ body {
     background-color: #fd7e14; }
   .badge--following {
     background-color: #f83a60; }
+
+.alert {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  cursor: context-menu;
+  background-color: #f83a60;
+  width: 100%; }
 
 .u-container {
   max-width: 80rem;
