@@ -3,7 +3,7 @@
 ## Usage
 
 ### npm install
-Install dependies
+Install dependencies
 
 ### npm start
 Run a local server in port 8080
