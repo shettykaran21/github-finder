@@ -31,7 +31,8 @@ body {
 .main {
   min-height: calc(100vh - 7rem);
   background-color: #1e1e1e;
-  padding: 3rem 0; }
+  padding: 5rem 0;
+  background: linear-gradient(rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.7)), url("/img/bg-main.jpg") center center/cover no-repeat; }
 
 .search__form {
   display: flex;
@@ -94,6 +95,56 @@ body {
       color: #f83a60;
       margin: 0 0.5rem; }
 
+.user {
+  display: flex;
+  gap: 2rem; }
+  .user-profile__photo {
+    display: block;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 5px;
+    margin-bottom: 1rem; }
+  .user-profile__link {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #727cf5;
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center; }
+  .user-info {
+    flex: 1; }
+    .user-info__badges {
+      width: 100%;
+      display: flex;
+      gap: 1rem; }
+      .user-info__badges > * {
+        flex: 1; }
+    .user-info__list {
+      list-style: none;
+      height: 80%;
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+
+.badge {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-size: 1.3rem;
+  text-align: center; }
+  .badge--repos {
+    background-color: #727cf5; }
+  .badge--gists {
+    background-color: #0acf97; }
+  .badge--followers {
+    background-color: #fd7e14; }
+  .badge--following {
+    background-color: #f83a60; }
+
 .u-container {
   max-width: 80rem;
   margin: 0 auto;
@@ -111,3 +162,6 @@ body {
 
 .mb-s {
   margin-bottom: 2rem; }
+
+.mb-m {
+  margin-bottom: 5rem; }

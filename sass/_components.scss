@@ -10,7 +10,12 @@
 .main {
   min-height: calc(100vh - 7rem);
   background-color: $color-grey-dark-3;
-  padding: 3rem 0;
+  padding: 5rem 0;
+  background: linear-gradient(
+      rgba($color-grey-dark-3, 0.7),
+      rgba($color-grey-dark-3, 0.7)
+    ),
+    url('/img/bg-main.jpg') center center/cover no-repeat;
 }
 
 .search {
@@ -93,5 +98,76 @@
       color: $color-red;
       margin: 0 0.5rem;
     }
+  }
+}
+
+.user {
+  display: flex;
+  gap: 2rem;
+
+  &-profile {
+    &__photo {
+      display: block;
+      height: 20rem;
+      width: 20rem;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+
+    &__link {
+      display: inline-block;
+      color: $color-white;
+      text-decoration: none;
+      background-color: $color-blue;
+      padding: 0.5rem 1.5rem;
+      width: 100%;
+      border-radius: 5px;
+      text-align: center;
+    }
+  }
+
+  &-info {
+    flex: 1;
+
+    &__badges {
+      width: 100%;
+      display: flex;
+      gap: 1rem;
+
+      & > * {
+        flex: 1;
+      }
+    }
+
+    &__list {
+      list-style: none;
+      height: 80%;
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  box-shadow: 0 1rem 4rem rgba(#000, 0.2);
+  border-radius: 10px;
+  font-size: 1.3rem;
+  text-align: center;
+
+  &--repos {
+    background-color: $color-blue;
+  }
+  &--gists {
+    background-color: $color-green;
+  }
+  &--followers {
+    background-color: $color-orange;
+  }
+  &--following {
+    background-color: $color-red;
   }
 }
