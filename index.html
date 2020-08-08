@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github User Finder</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2cd302d2e3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <h1 class="heading-primary">Github Finder</h1>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="u-container">
+        <div class="search">
+          <h1 class="search__heading">Search Github User</h1>
+          <p class="search__paragraph mb-s">
+            Enter a username to fetch a user and repos from Github
+          </p>
+          <form class="search__form">
+            <input
+              type="text"
+              name="search"
+              id="search-user"
+              class="search__input"
+              placeholder="Github Username"
+            />
+            <!-- <span class="search__side">Search</span> -->
+            <input type="submit" value="Search" class="search__side" />
+          </form>
+        </div>
+        <div class="profile"></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div>
+        Made with
+        <i class="fas fa-heart footer__icon footer__icon--heart"></i> by KARAN
+        SHETTY
+      </div>
+      <div class="footer__social">
+        <i class="fab fa-github fa-2x footer__icon footer__icon--github"></i>
+        <i
+          class="fab fa-linkedin fa-2x footer__icon footer__icon--linkedin"
+        ></i>
+        <i class="fab fa-twitter fa-2x footer__icon footer__icon--twitter"></i>
+      </div>
+    </footer>
+
+    <script src="js/github.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

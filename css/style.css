@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  color: #f1f3fa; }
+
+::selection {
+  background-color: #727cf5;
+  color: #f1f3fa; }
+
+.navbar {
+  height: 7rem;
+  background-color: #343a40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase; }
+
+.main {
+  min-height: calc(100vh - 7rem);
+  background-color: #1e1e1e;
+  padding: 3rem 0; }
+
+.search__form {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden; }
+
+.search__input {
+  width: 100%;
+  padding: 1.2rem 1.2rem;
+  font-family: inherit;
+  border: none;
+  background-color: #464f5b;
+  border: 2px solid transparent;
+  font-size: 1.6rem;
+  color: #ffffff;
+  transition: all 0.2s ease; }
+  .search__input:focus {
+    outline: none;
+    border: 2px solid #727cf5; }
+  .search__input::-webkit-input-placeholder {
+    color: #98a6ad;
+    font-size: 1.6rem; }
+
+.search__side {
+  background-color: #727cf5;
+  align-self: stretch;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  font-weight: 400;
+  color: #ffffff;
+  border: none;
+  font-family: inherit;
+  font-size: inherit; }
+  .search__side:hover {
+    background-color: #646ff4; }
+  .search__side:active {
+    background-color: #5a66f3; }
+  .search__side:focus {
+    outline: none; }
+
+.footer {
+  height: 10rem;
+  color: #1e1e1e;
+  background-color: #f1f3fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem; }
+  .footer__social {
+    display: flex;
+    gap: 1.5rem; }
+  .footer__icon {
+    cursor: pointer; }
+    .footer__icon--heart {
+      color: #f83a60;
+      margin: 0 0.5rem; }
+
+.u-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 3rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.heading-primary {
+  font-size: 2.7rem;
+  letter-spacing: 1px;
+  word-spacing: 0.7rem;
+  font-weight: 400; }
+
+.mb-s {
+  margin-bottom: 2rem; }
