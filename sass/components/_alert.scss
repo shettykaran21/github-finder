@@ -1,0 +1,10 @@
+.alert {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  box-shadow: 0 1rem 4rem rgba(#000, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  cursor: context-menu;
+  background-color: $color-red;
+  width: 100%;
+}

@@ -1,0 +1,10 @@
+.main {
+  min-height: calc(100vh - 7rem);
+  background-color: $color-grey-dark-3;
+  padding: 5rem 0;
+  background: linear-gradient(
+      rgba($color-grey-dark-3, 0.7),
+      rgba($color-grey-dark-3, 0.7)
+    ),
+    url('/img/bg-main.jpg') center center/cover no-repeat;
+}

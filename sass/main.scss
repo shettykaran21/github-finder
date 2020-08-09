@@ -1,5 +1,13 @@
-@import 'base';
-@import 'variables';
-@import 'components';
-@import 'utilities';
-@import 'mixins';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/base';
+@import 'base/utilities';
+
+@import 'components/alert';
+@import 'components/badge';
+@import 'components/main';
+@import 'components/navbar';
+@import 'components/search';
+
+@import 'layout/footer';

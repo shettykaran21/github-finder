@@ -9,6 +9,15 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
+  @media only screen and (max-width: 1200px) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 900px) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 1800px) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -20,6 +29,60 @@ body {
   background-color: #727cf5;
   color: #f1f3fa; }
 
+.u-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 3rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.heading-primary {
+  font-size: 2.7rem;
+  letter-spacing: 1px;
+  word-spacing: 0.7rem;
+  font-weight: 400; }
+
+.mb-s {
+  margin-bottom: 2rem; }
+
+.mb-m {
+  margin-bottom: 5rem; }
+
+.alert {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  cursor: context-menu;
+  background-color: #f83a60;
+  width: 100%; }
+
+.badge {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-size: 1.3rem;
+  text-align: center;
+  cursor: context-menu; }
+  .badge--repos {
+    background-color: #727cf5; }
+  .badge--gists {
+    background-color: #0acf97; }
+  .badge--followers {
+    background-color: #fd7e14; }
+  .badge--following {
+    background-color: #f83a60; }
+
+.main {
+  min-height: calc(100vh - 7rem);
+  background-color: #1e1e1e;
+  padding: 5rem 0;
+  background: linear-gradient(rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.7)), url("/img/bg-main.jpg") center center/cover no-repeat; }
+
 .navbar {
   height: 7rem;
   background-color: #343a40;
@@ -27,12 +90,6 @@ body {
   align-items: center;
   justify-content: center;
   text-transform: uppercase; }
-
-.main {
-  min-height: calc(100vh - 7rem);
-  background-color: #1e1e1e;
-  padding: 5rem 0;
-  background: linear-gradient(rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.7)), url("/img/bg-main.jpg") center center/cover no-repeat; }
 
 .search__form {
   display: flex;
@@ -144,51 +201,3 @@ body {
     transition: all 0.1s ease; }
   .user-repos__link:hover, .user-repos__link:active {
     color: #727cf5; }
-
-.badge {
-  display: inline-block;
-  padding: 0.3rem 1rem;
-  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  font-size: 1.3rem;
-  text-align: center;
-  cursor: context-menu; }
-  .badge--repos {
-    background-color: #727cf5; }
-  .badge--gists {
-    background-color: #0acf97; }
-  .badge--followers {
-    background-color: #fd7e14; }
-  .badge--following {
-    background-color: #f83a60; }
-
-.alert {
-  display: inline-block;
-  padding: 0.3rem 1rem;
-  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  text-align: center;
-  cursor: context-menu;
-  background-color: #f83a60;
-  width: 100%; }
-
-.u-container {
-  max-width: 80rem;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 0 3rem; }
-
-.u-center-text {
-  text-align: center; }
-
-.heading-primary {
-  font-size: 2.7rem;
-  letter-spacing: 1px;
-  word-spacing: 0.7rem;
-  font-weight: 400; }
-
-.mb-s {
-  margin-bottom: 2rem; }
-
-.mb-m {
-  margin-bottom: 5rem; }
