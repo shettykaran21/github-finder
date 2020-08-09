@@ -80,8 +80,7 @@ body {
 .main {
   min-height: calc(100vh - 7rem);
   background-color: #1e1e1e;
-  padding: 5rem 0;
-  background: linear-gradient(rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.7)), url("/img/bg-main.jpg") center center/cover no-repeat; }
+  padding: 5rem 0; }
 
 .navbar {
   height: 7rem;
@@ -134,26 +133,6 @@ body {
   .search__side:focus {
     outline: none; }
 
-.footer {
-  height: 10rem;
-  color: #1e1e1e;
-  background-color: #f1f3fa;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem; }
-  .footer__social {
-    display: flex;
-    gap: 1.5rem; }
-  .footer__link {
-    color: #1e1e1e; }
-  .footer__icon {
-    cursor: pointer; }
-    .footer__icon--heart {
-      color: #f83a60;
-      margin: 0 0.5rem; }
-
 .user {
   display: flex;
   gap: 2rem; }
@@ -201,3 +180,23 @@ body {
     transition: all 0.1s ease; }
   .user-repos__link:hover, .user-repos__link:active {
     color: #727cf5; }
+
+.footer {
+  height: 10rem;
+  color: #1e1e1e;
+  background-color: #f1f3fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem; }
+  .footer__social {
+    display: flex;
+    gap: 1.5rem; }
+  .footer__link {
+    color: #1e1e1e; }
+  .footer__icon {
+    cursor: pointer; }
+    .footer__icon--heart {
+      color: #f83a60;
+      margin: 0 0.5rem; }

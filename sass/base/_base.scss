@@ -29,10 +29,10 @@ body {
   font-family: 'Lato', sans-serif;
   line-height: 1.6;
   font-size: 1.6rem;
-  color: #f1f3fa;
+  color: $color-grey-light-1;
 }
 
 ::selection {
-  background-color: #727cf5;
-  color: #f1f3fa;
+  background-color: $color-blue;
+  color: $color-grey-light-1;
 }
