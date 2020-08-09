@@ -2,6 +2,11 @@
   display: flex;
   gap: 2rem;
 
+  @include respond(phone) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   &-profile {
     &__photo {
       display: block;
@@ -44,10 +49,19 @@
       flex-direction: column;
       justify-content: space-evenly;
       letter-spacing: 0.5px;
+      @include respond(phone) {
+        text-align: center;
+      }
     }
   }
 
   &-repos {
+    &__heading {
+      @include respond(phone) {
+        text-align: center;
+      }
+    }
+
     &__list {
       list-style: none;
     }

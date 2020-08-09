@@ -4,7 +4,7 @@ class UI {
   }
 
   showProfile(user) {
-    console.log(user);
+    // console.log(user);
     this.profile.innerHTML = `
       <div class="user mb-m">
         <div class="user-profile u-center-text">
@@ -28,7 +28,7 @@ class UI {
         </div>
       </div>
       <div class="user-repos">
-        <h2 class="mb-s">Latest Repos</h2>
+        <h2 class="mb-s user-repos__heading">Latest Repos</h2>
       </div>
     `;
   }

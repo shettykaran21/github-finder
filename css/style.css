@@ -97,7 +97,7 @@ body {
   overflow: hidden; }
 
 .search__input {
-  width: 100%;
+  flex: 1;
   padding: 1.2rem 1.2rem;
   font-family: inherit;
   border: none;
@@ -136,6 +136,10 @@ body {
 .user {
   display: flex;
   gap: 2rem; }
+  @media only screen and (max-width: 610px) {
+    .user {
+      flex-direction: column;
+      align-items: center; } }
   .user-profile__photo {
     display: block;
     height: 20rem;
@@ -167,6 +171,12 @@ body {
       flex-direction: column;
       justify-content: space-evenly;
       letter-spacing: 0.5px; }
+      @media only screen and (max-width: 610px) {
+        .user-info__list {
+          text-align: center; } }
+  @media only screen and (max-width: 610px) {
+    .user-repos__heading {
+      text-align: center; } }
   .user-repos__list {
     list-style: none; }
   .user-repos__item {
