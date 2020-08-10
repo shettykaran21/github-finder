@@ -1,7 +1,8 @@
 .toggle-box {
   position: absolute;
-  top: 2rem;
+  top: 1.5rem;
   right: 10rem;
+  // transform: translateY(-50%);
 }
 
 .toggle-label {
@@ -16,23 +17,23 @@
 
 .slider {
   position: absolute;
-  width: 60px;
-  height: 34px;
+  width: 6rem;
+  height: 3.4rem;
   background-color: #ccc;
-  transition: all 0.4s ease;
+  transition: all 0.4s cubic-bezier(0.5, 0.07, 0, 1.74);
   border-radius: 50px;
 
   &::after {
     content: '';
     display: block;
-    height: 26px;
-    width: 26px;
+    height: 2.6rem;
+    width: 2.6rem;
     border-radius: 50%;
     background-color: #fff;
     position: absolute;
     left: 4px;
     top: 4px;
-    transition: all 0.4s ease;
+    transition: all 0.4s cubic-bezier(0.5, 0.07, 0, 1.74);
   }
 }
 
@@ -41,7 +42,7 @@
 }
 
 .toggle:checked + .toggle-label > .slider::after {
-  transform: translateX(26px);
+  transform: translateX(2.6rem);
 }
 
 .control {
