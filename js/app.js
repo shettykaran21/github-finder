@@ -25,3 +25,12 @@ form.addEventListener('submit', (e) => {
 
   e.preventDefault();
 });
+
+document.querySelector('.toggle').addEventListener('change', changeTheme);
+
+function changeTheme() {
+  console.log('Checked');
+  document.querySelector('.main').classList.toggle('main-dark');
+  const reposList = document.querySelector('.user-repos__list');
+  console.log(reposList);
+}

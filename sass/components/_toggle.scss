@@ -1,0 +1,50 @@
+.toggle-box {
+  position: absolute;
+  top: 2rem;
+  right: 10rem;
+}
+
+.toggle-label {
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle {
+  // opacity: 0;
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  width: 60px;
+  height: 34px;
+  background-color: #ccc;
+  transition: all 0.4s ease;
+  border-radius: 50px;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    transition: all 0.4s ease;
+  }
+}
+
+.toggle:checked + .toggle-label > .slider {
+  background-color: $color-grey-dark-3;
+}
+
+.toggle:checked + .toggle-label > .slider::after {
+  transform: translateX(26px);
+}
+
+.control {
+  height: 100vh;
+  width: 100vw;
+}

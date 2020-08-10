@@ -2,4 +2,10 @@
   min-height: calc(100vh - 7rem);
   background-color: $color-grey-dark-3;
   padding: 5rem 0;
+  transition: all 0.2s ease;
+}
+
+.main-dark {
+  background-color: $color-grey-light-1;
+  color: $color-grey-dark-3;
 }
