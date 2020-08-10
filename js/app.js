@@ -29,12 +29,17 @@ form.addEventListener('submit', (e) => {
 document.querySelector('.toggle').addEventListener('change', changeTheme);
 
 function changeTheme() {
-  document.querySelector('.main').classList.toggle('main-dark');
+  const main = document.querySelector('.main');
+  main.classList.toggle('main-dark');
 
   const repos = document.querySelectorAll('.user-repos__link');
 
   repos.forEach((repo) => {
-    // console.log(repo);
-    repo.style.color = '#1e1e1e';
+    if (main.classList.contains('main-dark')) {
+      repo.style.color = '#1e1e1e';
+    } else {
+      repo.style.color = '#ffffff';
+    }
+    console.log(repo.style.color);
   });
 }
