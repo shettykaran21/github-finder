@@ -126,7 +126,8 @@ body {
   transition: all 0.1s ease;
   border: none;
   font-family: inherit;
-  font-size: inherit; }
+  font-size: inherit;
+  background-color: #727cf5; }
   .search__side:focus {
     outline: none; }
 
