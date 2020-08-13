@@ -242,8 +242,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  border-top: 1px solid #1e1e1e; }
+  gap: 1rem; }
   .footer__social {
     display: flex;
     gap: 1.5rem; }
